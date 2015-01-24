@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView
+        android:id="@+id/textCreatedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="15sp"
+        android:text="Created"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/system_white" />
+
+	<TextView
+	    android:id="@+id/textSubject"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignLeft="@+id/textCreatedDate"
+	    android:layout_below="@+id/textCreatedDate"
+	    android:text="Subject"
+	    android:textAppearance="?android:attr/textAppearanceMedium" />
+		
+	<Button
+	    android:id="@+id/buttonDelete"
+	    style="?android:attr/buttonStyleSmall"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentTop="true"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="10dp"
+	    android:background="@color/system_white"
+	    android:focusable="false"
+	    android:focusableInTouchMode="false"
+	    android:text="Delete"
+	    android:textColor="@color/system_red"
+	    android:visibility="invisible" />
+	
+</RelativeLayout>
